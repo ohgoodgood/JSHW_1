@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>참치회 특가 판매</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .container {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+      }
+      .product-list {
+        margin-bottom: 20px;
+      }
+      .selected-products {
+        text-align: left;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>참치회 특가 판매</h1>
+      <select
+        id="productSelect"
+        class="product-list"
+        multiple
+        size="4"
+      ></select>
+      <br />
+      <button id="paymentButton">결제하기</button>
+      <div id="selectedProducts" class="selected-products">
+        <h2>선택한 상품</h2>
+        <ul id="productList"></ul>
+        <p id="totalPrice">총액: 0원</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
